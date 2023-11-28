@@ -1,0 +1,7 @@
+VIA_ENABLE = yes
+VIAL_ENABLE = yes
+ENCODER_ENABLE = yes
+SRC += a2j/translate_ansi_to_jis.c
+# POINTING_DEVICE_ENABLE = yes
+# POINTING_DEVICE_DRIVER = pmw3320
+# POINTING_DEVICE_DRIVER = adns5050
