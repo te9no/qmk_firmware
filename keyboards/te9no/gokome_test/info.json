@@ -1,0 +1,72 @@
+{
+    "manufacturer": "te9no",
+    "keyboard_name": "gokometest",
+    "maintainer": "te9no",
+    "bootloader": "rp2040",
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": true,
+        "command": false,
+        "mousekey": false,
+        "rgblight": true
+    },
+    "matrix_pins": {
+        "rows": ["GP8", "GP9", "GP10", "GP11", "NO_PIN"],
+        "cols": ["GP2"]
+    },
+    "encoder": {
+        "rotary": [
+            { "pin_a": "GP12", "pin_b": "GP13",  "resolution": 2 }
+        ]
+    },
+    "split": {
+        "enabled": true,
+        "transport": {
+            "protocol": "serial"
+        },
+        "matrix_pins": {
+            "right": {
+                "rows": ["GP8", "GP9", "GP10", "GP11", "NO_PIN"],
+                "cols": ["GP2"]
+            }
+        },
+        "soft_serial_pin": "GP1"
+    },
+    "debounce": 5,
+    "processor": "RP2040",
+    "url": "",
+    "usb": {
+        "vid": "0xF055",
+        "pid": "0x7E92",
+        "device_version": "1.0.0"
+    },
+    "rgblight": {
+        "led_count": 2,
+        "pin": "GP0",
+        "animations": {
+               "alternating": true,
+               "breathing": true,
+               "twinkle": true
+        },
+        "sleep": true,
+        "max_brightness": 120,
+        "split": true,
+        "split_count": [ 1, 1 ]
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"matrix":[0,0], "x":0, "y":0},
+                {"matrix":[5,0], "x":10, "y":0},
+                {"matrix":[1,0], "x":0, "y":1},
+                {"matrix":[6,0], "x":10, "y":1},
+                {"matrix":[2,0], "x":0, "y":2},
+                {"matrix":[7,0], "x":10, "y":2},
+                {"matrix":[3,0], "x":0, "y":3},
+                {"matrix":[8,0], "x":10, "y":3},
+                {"matrix":[4,0], "x":0, "y":4},
+                {"matrix":[9,0], "x":10, "y":4}
+            ]
+        }
+    }
+}
