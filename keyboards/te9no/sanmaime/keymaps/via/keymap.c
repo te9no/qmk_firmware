@@ -46,6 +46,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   return process_record_user_a2j(keycode, record);
 }
 
+
+
+
 //#ifdef ENCODER_ENABLE
 bool encoder_update_user(uint8_t index, bool clockwise){
     keypos_t key;
@@ -68,8 +71,11 @@ bool encoder_update_user(uint8_t index, bool clockwise){
     if(index==2){
         if(clockwise){
             key.row=11,key.col=5;
+                              rgblight_sethsv(HSV_RED);
         }else{
             key.row=11,key.col=7;
+                                 rgblight_sethsv(HSV_GREEN);
+
         }
         tap_code(keymap_key_to_keycode(layer_switch_get_layer(key),key));
     }
