@@ -1,0 +1,12 @@
+#pragma once
+
+#define MATRIX_MASKED
+#define MASTER_LEFT 
+#define TAPPING_TERM 180
+#define RGBLIGHT_DEFAULT_HUE 59
+#define RGBLIGHT_DEFAULT_VAL 32
+#define ADNS5050_SCLK_PIN GP11
+#define ADNS5050_SDIO_PIN GP10
+#define ADNS5050_CS_PIN GP12
+#define WS2812_DI_PIN GP0
+#define RGBLIGHT_LED_MAP { 4, 3, 2, 1, 0,    5, 6, 7, 8, 9 }

@@ -1,0 +1,113 @@
+{
+    "manufacturer": "te9no",
+    "keyboard_name": "gokome",
+    "maintainer": "te9no",
+    "bootloader": "rp2040",
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": true,
+        "command": false,
+        "mousekey": false,
+        "rgblight": true
+    },
+    "matrix_pins": {
+        "rows": ["GP14", "GP15", "GP26", "GP27", "GP6", "GP7", "GP8", "GP9", "NO_PIN"],
+        "cols": ["GP14", "GP15", "GP26", "GP27", "GP6", "GP7", "GP8", "GP9", "NO_PIN"]
+    },
+    "encoder": {
+        "rotary": [
+            { "pin_a": "GP28", "pin_b": "GP29",  "resolution": 2 }
+        ]
+    },
+    "debounce": 5,
+    "processor": "RP2040",
+    "url": "",
+    "usb": {
+        "vid": "0xF055",
+        "pid": "0x7E92",
+        "device_version": "1.0.0"
+    },
+    "rgblight": {
+        "led_count": 10,
+        "pin": "GP0",
+        "animations": {
+            "alternating": true,
+            "breathing": true,
+            "christmas": true,
+            "knight": true,
+            "rainbow_mood": true,
+            "rainbow_swirl": true,
+            "rgb_test": true,
+            "snake": true,
+            "static_gradient": true,
+            "twinkle": true
+        },
+        "sleep": true,
+        "max_brightness": 120
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"label":"ESC",  "matrix":[0,1], "x":0, "y":0},
+                {"label":"Q",    "matrix":[0,2], "x":1, "y":0},
+                {"label":"W",    "matrix":[0,3], "x":2, "y":0},
+                {"label":"E",    "matrix":[0,4], "x":3, "y":0},
+                {"label":"R",    "matrix":[0,5], "x":4, "y":0},
+                {"label":"T",    "matrix":[0,6], "x":5, "y":0},
+                {"label":"RE2",  "matrix":[0,7], "x":7, "y":0},
+
+                {"label":"Y",    "matrix":[4,0], "x":7.25, "y":0},
+                {"label":"U",    "matrix":[4,1], "x":8.25, "y":0},
+                {"label":"I",    "matrix":[4,2], "x":9.25, "y":0},
+                {"label":"O",    "matrix":[4,3], "x":10.25, "y":0},
+                {"label":"P",    "matrix":[4,5], "x":11.25, "y":0},
+                {"label":"BS",   "matrix":[4,6], "x":12.25, "y":0},
+                
+                {"label":"Tab",  "matrix":[1,0], "x":0, "y":1, "w":1.5},
+                {"label":"A",    "matrix":[1,2], "x":1.5, "y":1},
+                {"label":"S",    "matrix":[1,3], "x":2.5, "y":1},
+                {"label":"D",    "matrix":[1,4], "x":3.5, "y":1},
+                {"label":"F",    "matrix":[1,5], "x":4.5, "y":1},
+                {"label":"G",    "matrix":[1,6], "x":5.5, "y":1},
+
+                {"label":"H",    "matrix":[5,0], "x":7.75, "y":1},
+                {"label":"J",    "matrix":[5,1], "x":8.75, "y":1},
+                {"label":"K",    "matrix":[5,2], "x":9.75, "y":1},
+                {"label":"L",    "matrix":[5,3], "x":10.75, "y":1},
+                {"label":";",    "matrix":[5,4], "x":11.75, "y":1},
+                {"label":"Enter","matrix":[5,6], "x":12.75, "y":1},
+
+                {"label":"Shift","matrix":[2,0], "x":0, "y":2, "w":1.75},
+                {"label":"Z",    "matrix":[2,1], "x":1.75, "y":2},
+                {"label":"X",    "matrix":[2,3], "x":2.75, "y":2},
+                {"label":"C",    "matrix":[2,4], "x":3.75, "y":2},
+                {"label":"V",    "matrix":[2,5], "x":4.75, "y":2},
+                {"label":"B",    "matrix":[2,6], "x":5.75, "y":2},
+
+                {"label":"N",    "matrix":[6,0], "x":8, "y":2},
+                {"label":"M",    "matrix":[6,1], "x":9, "y":2},
+                {"label":"CORON","matrix":[6,2], "x":10, "y":2},
+                {"label":"DOT",  "matrix":[6,3], "x":11, "y":2},
+                {"label":"Up",   "matrix":[6,4], "x":12, "y":2},
+                {"label":"Shift","matrix":[6,5], "x":13, "y":2},
+
+                {"label":"Ctrl", "matrix":[3,0], "x":0, "y":3, "w":2.25},
+                {"label":"Win",  "matrix":[3,1], "x":2.25, "y":3},
+                {"label":"Alt",  "matrix":[3,2], "x":3.25, "y":3},
+                {"label":"Spc",  "matrix":[3,4], "x":4.25, "y":3},
+                {"label":"Spc",  "matrix":[3,5], "x":5.25, "y":3},
+
+                {"label":"Spc",  "matrix":[7,0], "x":6, "y":3},
+                {"label":"Spc",  "matrix":[7,1], "x":7, "y":3},
+                {"label":"Spc",  "matrix":[7,2], "x":8.5, "y":3},
+                {"label":"Spc",  "matrix":[7,3], "x":9.5, "y":3},
+                {"label":"Left", "matrix":[7,4], "x":10.5, "y":3},
+                {"label":"Down", "matrix":[7,5], "x":11.5, "y":3},
+                {"label":"Right","matrix":[7,6], "x":12.5, "y":3},
+
+                {"label":"RE1",  "matrix":[8,0], "x":15.25, "y":5, "w":0.5},
+                {"label":"RE3",  "matrix":[8,1], "x":16.75, "y":5, "w":0.5}
+            ]
+        }
+    }
+}
